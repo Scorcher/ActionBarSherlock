@@ -12,10 +12,7 @@ cat <<EOF > local.properties
 sdk.dir=/opt/android-sdk-linux
 EOF
 
-sudo rm -rf build sample/build library/build app/build
-
-# copy build-file...
-cp -p ../scripts/build.sh ./ && chmod +x ./build.sh
+sudo rm -rf build actionbarsherlock/build actionbarsherlock-fest/build actionbarsherlock-i18n/build
 
 JENKINS_HOME="$HOME"
 PROJECT_HOME="`pwd`"
